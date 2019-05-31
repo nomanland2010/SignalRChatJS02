@@ -17,6 +17,7 @@ namespace SignalRChat
             CreateWebHostBuilder(args).Build().Run();
         }
 
+        // 这个是local分支里的内容
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>();
