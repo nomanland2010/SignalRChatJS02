@@ -7,5 +7,8 @@ namespace SignalRChatJS02
 {
     public class Class
     {
+
+
+
     }
 }
