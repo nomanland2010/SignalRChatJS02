@@ -19,7 +19,6 @@ namespace SignalRChat
             Console.WriteLine("This is new Local Branch!!");
         }
 
-        // 这是最新的希望只有在 分支上出现的内容
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>();
