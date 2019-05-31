@@ -15,8 +15,6 @@ namespace SignalRChat
         public static void Main(string[] args)
         {
             CreateWebHostBuilder(args).Build().Run();
-
-            Console.WriteLine("This is new Local Branch!!");
         }
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
