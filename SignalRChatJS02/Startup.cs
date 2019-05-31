@@ -35,12 +35,6 @@ namespace SignalRChat
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-            // 进程内承载模型
-            services.Configure<IISServerOptions>(options =>
-            {
-                options.AutomaticAuthentication = false;
-            });
-
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
             services.AddSignalR();
