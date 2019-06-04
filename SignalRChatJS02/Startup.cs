@@ -63,10 +63,11 @@ namespace SignalRChat
 
             app.UseMvc();
 
-            app.UseForwardedHeaders(new ForwardedHeadersOptions {
-                ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
-            });
-            app.UseAuthentication();
+            // 实际测试表名 不用以下配置，ubuntu上nginx作为反向代理也一点问题都没有
+            //app.UseForwardedHeaders(new ForwardedHeadersOptions {
+            //    ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
+            //});
+            //app.UseAuthentication();
 
         }
     }
